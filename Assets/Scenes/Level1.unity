@@ -12613,7 +12613,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1556960583
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12626,7 +12626,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b5fa4891ec998248b7bfb1c55c129ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Door: {fileID: 1918507033}
+  Door: {fileID: 321861469}
 --- !u!483693784 &1556960584
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -14578,7 +14578,6 @@ GameObject:
   - component: {fileID: 1918507034}
   - component: {fileID: 1918507037}
   - component: {fileID: 1918507036}
-  - component: {fileID: 1918507035}
   - component: {fileID: 1918507038}
   m_Layer: 0
   m_Name: carpet
@@ -14602,20 +14601,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 605676473}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1918507035
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1918507033}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f72d9f56ccf9eb240bf6d289cee83f7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  winPanel: {fileID: 542570952}
-  keyPickup: {fileID: 1556960583}
 --- !u!483693784 &1918507036
 TilemapRenderer:
   m_ObjectHideFlags: 0
