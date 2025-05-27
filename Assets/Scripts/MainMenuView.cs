@@ -19,6 +19,8 @@ public class MainMenuView : View
     }
     private void LoadScene(string Level1)
     {
+        HeartSystem.life = 3;
+        Time.timeScale = 1f;
         SceneManager.LoadScene(Level1);
     }
 }

@@ -1,8 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement; // Import SceneManager
+using UnityEngine.SceneManagement;
 
 public class GameOverPanel : MonoBehaviour
 {
@@ -10,12 +8,22 @@ public class GameOverPanel : MonoBehaviour
 
     private void Start()
     {
-        _backButton.onClick.AddListener(Level2);
+        if (_backButton != null)
+        {
+            _backButton.onClick.AddListener(GoHome);
+        }
+        else
+        {
+            Debug.LogWarning("Back Button is not assigned in the inspector.");
+        }
+
+        Time.timeScale = 0f;
     }
 
-    private void Level2()
+    private void GoHome()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        HeartSystem.life = 3;
         Time.timeScale = 1f;
+        SceneManager.LoadScene(0);
     }
 }

@@ -32,6 +32,7 @@ public class WinReturnToMainMenuViewl : MonoBehaviour
         // Check if Level 1 exists in the build settings
         if (levelOneIndex < SceneManager.sceneCountInBuildSettings)
         {
+            HeartSystem.life = 3;
             SceneManager.LoadScene(1);
             Time.timeScale = 1f;
         }
